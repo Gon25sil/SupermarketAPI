@@ -7,7 +7,7 @@ docker-compose up --build
 ```
 ## Using Swagger
 
-This Api uses the "Swagger" tool to better describe its structure. Access  http://localhost:8000/swagger for a better user experience.
+This Api uses the "Swagger" tool to better describe its structure. Access  http://localhost:8080/swagger for a better user experience.
 # API overview
 
 The following section provides a high level description of the API.
