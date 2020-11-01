@@ -1,11 +1,12 @@
 ﻿using SupermarketAPI.Domain.Models;
 using SupermarketAPI.Domain.Persistance;
 using SupermarketAPI.Domain.Persistance.Repositories;
+using SupermarketAPI.Domain.Services;
 using SupermarketAPI.Domain.Services.Communication;
 using System;
 using System.Collections.Generic;
 
-namespace SupermarketAPI.Domain.Services
+namespace SupermarketAPI.Services
 {
     public class CategoryService : ICategoryService
     {

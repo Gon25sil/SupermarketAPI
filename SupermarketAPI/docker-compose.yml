@@ -1,0 +1,25 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    environment: 
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Pa55w0rd2019"
+      MSSQL_PID: Express
+    ports: 
+      - "1433:1433" 
+  supermarketapi:
+    image: supermarketapi
+    build: .
+    depends_on: 
+      - ms-sql-server
+    environment: 
+      DBServer: "ms-sql-server"
+      DBUser: "SA"
+      DBPassword: "Pa55w0rd2019"
+      DBDatabase: "SupermarketDB"
+    ports:
+      - "8080:80"      

@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SupermarketAPI.Domain.Models;
-using System;
+using SupermarketAPI.Domain.Persistance;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace SupermarketAPI.Domain.Persistance.Repositories
+namespace SupermarketAPI.Persistance.Repositories
 {
     public class ProductRepository : BaseRepository, IProductRepository
     {

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using SupermarketAPI.Domain.Persistance;
+using SupermarketAPI.Domain.Persistance.Repositories;
 
-namespace SupermarketAPI.Domain.Persistance.Repositories
+namespace SupermarketAPI.Persistance.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

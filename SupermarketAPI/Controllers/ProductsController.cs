@@ -42,7 +42,7 @@ namespace SupermarketAPI.Controllers
         [HttpGet("{id}", Name = "GetProducts")]
         public ActionResult<ProductReadDto> GetProducts(int id)
         {
-            var product = productService.Get(id);
+            Product product = productService.Get(id);
             if (product == null)
                 return NotFound();
 

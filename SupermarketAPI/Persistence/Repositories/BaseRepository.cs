@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using SupermarketAPI.Domain.Persistance;
 
-namespace SupermarketAPI.Domain.Persistance.Repositories
+namespace SupermarketAPI.Persistance.Repositories
 {
     public abstract class BaseRepository
     {
